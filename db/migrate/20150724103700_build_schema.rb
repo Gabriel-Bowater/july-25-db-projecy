@@ -5,7 +5,7 @@ class BuildSchema < ActiveRecord::Migration
 	def change 
 		create_table :animals do |t|
 
-			t.string	:animal_name, :unique, null: false
+			t.string	:animal_name, null: false
 			t.string	:animal_ascii_file
 			t.string	:animal_sound, null: false
 			t.string	:animal_sound_file
@@ -15,7 +15,7 @@ class BuildSchema < ActiveRecord::Migration
 		end
  
 		create_table :continents do |t|
-			t.string :continent_name, :unique, null: false
+			t.string :continent_name, null: false
 			t.timestamps null: false
 		end
 

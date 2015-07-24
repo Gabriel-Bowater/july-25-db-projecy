@@ -1,4 +1,4 @@
-require_relative '../config/application.rb'
+require_relative '../../config/application.rb'
 
 class Animal < ActiveRecord::Base
 	has_many :animal_continent
