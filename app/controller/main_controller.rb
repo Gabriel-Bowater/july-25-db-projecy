@@ -20,7 +20,7 @@ class Controller
         animal = Animal.find_by(animal_name: user_input[1])
         p animal
         sound = animal.animal_sound_file
-        @speak.sound(sound)
+        @speak.noise(sound)
         @speak.return_animal_profile(animal.id, animal.animal_ascii_file)
       else
         @speak.nope(user_input[1])
