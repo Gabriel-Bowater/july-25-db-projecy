@@ -54,19 +54,16 @@ continent_name = ["North America",
 					"Europe",
 					"Australia"]
 
-i=0
-20.times do
+
+20.times do |i|
 	Animal.create(
 		:animal_name => animal_name[i],
 		:animal_sound => animal_sound[i]
 		)
-	i +=1
 end
 
-x = 0
-7.times do
+7.times do |x|
 	Continent.create(
-		:continent_name => continent_name[i]
+		:continent_name => continent_name[x]
 		)
-	x += 1
 end
