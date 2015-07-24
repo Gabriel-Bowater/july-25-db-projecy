@@ -16,20 +16,19 @@ def search_for?
   return input
 end
 
-def return_animal_profile(animal_id, img_file_path)
+def return_animal_profile(animal_id#, img_file_path
+  )
   this_animal = Animal.find_by(id: animal_id)
   p disp_art(img_file_path)
   p "WHAT DOES THE #{this_animal.name} SAY?".upcase
   p "The #{this_animal.name} says '#{this_animal.sound}'!"
-  P this_animal.continents.each do |c|
-    p "#{c}"
   end
 end
 
 
-def disp_art(image_file)
-  File.open(image_file).each { |line| print line }
-end
+# def disp_art(image_file)
+#   File.open(image_file).each { |line| print line }
+# end
 
 
 end # end of class
